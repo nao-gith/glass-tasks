@@ -1,0 +1,11 @@
+{
+ "name":"glass-tasks",
+ "main":"worker/index.mjs",
+ "compatibility_date":"2026-10-01",
+ "account_id":"163e6615203a093d8ad6d55b5780a3cf",
+ "assets":{"directory":"./dist","binding":"ASSETS","not_found_handling":"single-page-application","run_worker_first":["/api/*","/auth/*"]},
+ "d1_databases":[{"binding":"DB","database_name":"glass-tasks-db","database_id":"51dfa7a8-88fc-4f1e-bc49-488f142ff72f","migrations_dir":"migrations"}],
+ "ai":{"binding":"AI"},
+ "triggers":{"crons":["0 18 * * *"]},
+ "observability":{"enabled":true}
+}
